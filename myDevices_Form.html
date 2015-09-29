@@ -1,0 +1,46 @@
+﻿<h3 ng-show="edit">Neues Gerät:</h3>
+<h3 ng-hide="edit">Gerät ändern:</h3>
+
+<form class="form-horizontal">
+<div class="form-group">
+  <label class="col-sm-2 control-label">Kategorie:</label>
+  <div class="col-sm-10">
+    <input type="text" ng-model="dCategory" ng-disabled="!edit" placeholder="Kategorie">
+  </div>
+</div> 
+<div class="form-group">
+  <label class="col-sm-2 control-label">Gerät:</label>
+  <div class="col-sm-10">
+    <input type="text" ng-model="dName" placeholder="Name">
+  </div>
+</div> 
+<div class="form-group">
+  <label class="col-sm-2 control-label">Energieklasse:</label>
+  <div class="col-sm-10">
+    <input type="text" ng-model="dClass" placeholder="">
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-sm-2 control-label">Nutzung pro Tag</label>
+  <div class="col-sm-10">
+    <input type="text" ng-model="dUsagePerDay" placeholder="(in Stunden)">
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-sm-2 control-label">Betieb:</label>
+  <div class="col-sm-10">
+    <input type="text" ng-model="dConsumption" placeholder="(in Watt)">
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-sm-2 control-label">Anschaffungspreis:</label>
+  <div class="col-sm-10">
+    <input type="text" ng-model="dPrice" placeholder="(in €)">
+  </div>
+</div>
+</form>
+
+<hr>
+<button class="btn btn-success" ng-disabled="error || incomplete">
+  <span class="glyphicon glyphicon-save"></span> Speichern
+</button>

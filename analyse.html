@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Milestone2">
+    <meta name="author" content="Gruppe2">
+
+    <title>Green Home</title>
+	
+	<style>
+	.im-centered {
+		margin: 0 auto; 
+		max-width: 1000px;
+		text-align: center;
+	}
+
+	</style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Google Webfont -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:100,400,700,500' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,' rel='stylesheet' type='text/css'>
+	
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid top">
+        <div class="navbar-header col-sm-3 col-md-2">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="logo">
+			<span class="glyphicon glyphicon-leaf"></span><a class="navbar-brand" href="#">Green Home</a>
+		  </div>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><span class="glyphicon glyphicon-th"></span><a href="index.html">Überblick</a></li>
+			<li class="active"><span class="glyphicon glyphicon-check"></span><a href="analyse.html">Analyse</a></li>
+			<li><span class="glyphicon glyphicon-piggy-bank"></span><a href="vorschlaege.html">Vorschläge</a></li>
+            <li><span class="glyphicon glyphicon-user"></span><a href="profil.html">Profil</a></li>
+          </ul>
+		<form>
+			<div class="search">
+				<input type="text" class="form-control" placeholder="Suche...">
+			</div>
+         </form>
+		<div class="profile btn-grp">
+		<button type="button" class="btn btn-primary pic dropdown-toggle" data-toggle="dropdown"><img class="profilepic" src="img/profile/spencer.jpg" /></button>
+		  <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Placeholder</a></li>
+			<li><a href="#">Placeholder</a></li>
+			<li><a href="#">Einstellungen<span class="glyphicon glyphicon-cog"></span></a></li>
+			<li><a href="#">Logout<span class="glyphicon glyphicon-off"></span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+		  <div class="row">
+			<div class="col-sm-3 col-md-2 sidebar">
+				<h2 class="sub-header">Meine Geräte</h2> 
+				  <ul class="nav nav-sidebar">
+					<li><a href="#"><span class="glyphicon glyphicon-lamp"></span>Wohnzimmer</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-apple"></span>Küche</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-cutlery"></span>Esszimmer</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-briefcase"></span>Büro</a></li>
+				  </ul>
+			</div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+
+        <h2 class="sub-header">Analyse</h2>
+        
+		<!-- Two columns of text below the carousel -->
+		<div class="im-centered">
+		<div class="row">
+			<div class="col-lg-6">
+				<img class="img-circle" src="img/placeholder/kreisdiagramm.png" alt="Generic placeholder image" width="350" height="350">
+					<h2>Aktueller Stand</h2>
+				<p>Gesamt-Stromkosten: 200€ / Monat</p>
+				<p>Verbrauch: 20 kW</p>
+				<p>Größter Energieverbraucher: Fernseher / 5 kW</p>
+				<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+			</div><!-- /.col-lg-6 -->
+			<div class="col-lg-6">
+				<img class="img-circle" src="img/placeholder/kreisdiagramm2.png" alt="Generic placeholder image" width="350" height="350">
+					<h2>Alternativer Stand</h2>
+				<p>Gesamt-Stromkosten: 180€ / Monat</p>
+				<p>Verbrauch: 12 kW</p>
+				<p>Größter Energieverbraucher: Toaster / 3 kW</p>
+				<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+			</div><!-- /.col-lg-6 -->
+		</div><!-- /.row -->
+		</div>
+		
+		</div>
+		</div>
+	</div>
+		
+
+	<footer>
+		<div class="container-fluid">
+		
+		</div>
+	</footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+	<!-- D3 -->
+	<script type="text/javascript" src="d3/d3.v3.js"></script>
+  </body>
+</html>

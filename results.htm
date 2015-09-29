@@ -1,0 +1,55 @@
+﻿<div ng-repeat="result in results" class="col-xs-12 col-sm-4 {{result.dPlace}}">
+	<h4>{{result.id}}.Platz</h4>
+		<div class="result">
+			<div class="fabricator">
+				<h5>{{ result.dName }}</h5>
+				<table class="rating table-responsive">
+					<tr>
+						<td><img src="img/geraete/{{ result.img }}" class="img-responsive" alt="" />
+						<td style="text-align: right;"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td style="text-align: center; color: #4CAF50; "><p>{{result.eClass}}</p></td>
+					</tr>
+				</table>
+				<div id="rate"></div>
+			</div>
+			<div class="energy">
+				<h5>Energieverbrauch</h5>	
+					<table class="table table-responsive">
+						<thead>
+							<th></th>
+							<th style="text-align: right;">aktuell</th>
+							<th style="text-align: right;">neu</th>
+						</thead>
+						<tr>
+							<td style="color: #202020;">Standby</td>
+							<td style="text-align: right; color: #ff5252;" ng-repeat="device in devices">{{ device.Standby }}</td>
+							<td style="text-align: right;color: #4CAF50;">{{ result.Standby }}</td>
+						</tr>
+						<tr>
+							<td style="color: #202020;">Betrieb</td>
+							<td style="text-align: right; color: #ff5252;" ng-repeat="device in devices">{{ device.Power }}</td>
+							<td style="text-align: right; color: #4CAF50;">{{ result.Power }}</td>
+						</tr>
+					</table>
+			</div>
+			<div class="price">
+					<table class="table table-responsive">
+						<tr>
+							<th>Ersparnis</th>
+							<td style="text-align: right; color: #4CAF50;">15€ / Monat</td>
+						</tr>
+						<tr>
+							<th>Preis</th>
+							<td style="text-align: right; color: #ffea00;">{{ result.Price }}</td>
+						</tr>
+						<tr>
+							<th>Rentabel nach</th>
+							<td style="text-align: right; color: #202020;">ca. 3 Jahren</td>
+						</tr>
+					</table>	
+			</div>
+		</div>
+</div>

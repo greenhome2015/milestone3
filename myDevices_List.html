@@ -1,0 +1,33 @@
+				<table class="table table-striped">
+				  <thead>
+					<tr>
+					  <th>Editieren</th>
+					  <th>Kategorie</th>
+					  <th>Gerät</th>
+					  <th>Energieklasse</th>
+					  <th>Nutzung pro Tag</th>
+					  <th>Betrieb</th>
+					  <th>Anschaffungspreis</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr ng-repeat="device in devices">
+					  <td>
+						<button class="btn" ng-click="editDevice(device.id)">
+						  <span class="glyphicon glyphicon-pencil"></span>  Ändern
+						</button>
+					  </td>
+					  <td>{{ device.dCategory }}</td>
+					  <td>{{ device.dName }}</td>
+					  <td>{{ device.dClass }}</td>
+					  <td>{{ device.dUsagePerDay }} h</td>
+					  <td>{{ device.dConsumption }} W</td>
+					  <td>{{ device.dPrice }} €</td>
+					</tr>
+				  </tbody>
+				</table>
+				<hr>
+				<button class="btn btn-success" ng-click="editDevice('new')">
+				<span class="glyphicon glyphicon-plus"></span> Neues Gerät
+				</button>
+				<hr>
