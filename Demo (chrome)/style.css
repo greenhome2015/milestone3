@@ -272,6 +272,11 @@ ul.navbar-nav li > a{
 	width: 330px;
  }
  
+ img.img-rating {
+		width:32px !important; 
+		height:192px;
+ }
+ 
    .fabricator .rating p {
 	font-size: 24px ;
  }
@@ -399,4 +404,90 @@ h2 {
 
 .pagination>li>a, .pagination>li>span {
 	color: #00bfa5;
+ }
+
+ 
+/*
+ *	Analyse
+ */
+.consumption {
+	padding: 24px;
+	margin: 15px;
+	background-color: #fff;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.now , .opt {
+	margin-top: 32px;
+}
+ 
+.aktuell , .optimal, .preis{
+	margin: 15px 0;
+	padding: 24px;
+	background-color: #fff;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+/*
+ *	Analyse Tabelle
+ */
+ 
+ /* Energieverbrauch*/
+.opt th , .opt td {
+	text-align: left;
+}
+
+.now th , .now td {
+	text-align: right;
+}
+
+.now td{
+	color: #ff5252;
+}
+
+.opt td {
+	color: #4CAF50;
+}
+
+.opt th , .opt td , .now th, .now td {
+	width: 50%;
+}
+ /* Geräte */
+.aktuell th, .aktuell td {
+	width: 20%;
+}
+
+.optimal th, .optimal td {
+
+}
+ 
+td.analyse, th.analyse {
+	text-align: right;
+}
+
+.aktuell td.analyse {
+	color: #ff5252;
+}
+
+.optimal td.analyse {
+	color: #4CAF50;
+	width: 25% !important;
+}	
+
+.preis th, .preis td {
+	text-align: right;
+}
+.gesamt th, .gesamt td {
+	width: 50%;
+}
+.gesamt.table tr{
+	border-top: 7px double #ddd !important;
+}
+
+/*
+ *	Analyse Span
+ */
+ 
+ .preis span{
+	float: left;
  }

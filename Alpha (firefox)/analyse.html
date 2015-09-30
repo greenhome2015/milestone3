@@ -10,15 +10,6 @@
 
     <title>Green Home</title>
 	
-	<style>
-	.im-centered {
-		margin: 0 auto; 
-		max-width: 1000px;
-		text-align: center;
-	}
-
-	</style>
-
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -48,8 +39,6 @@
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
           </button>
           <div class="logo">
 			<span class="glyphicon glyphicon-leaf"></span><a class="navbar-brand" href="#">Green Home</a>
@@ -57,10 +46,8 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><span class="glyphicon glyphicon-th"></span><a href="index.html">Überblick</a></li>
+            <li><span class="glyphicon glyphicon-search"></span><a href="index.html">Überblick</a></li>
 			<li class="active"><span class="glyphicon glyphicon-check"></span><a href="analyse.html">Analyse</a></li>
-			<li><span class="glyphicon glyphicon-piggy-bank"></span><a href="vorschlaege.html">Vorschläge</a></li>
-            <li><span class="glyphicon glyphicon-user"></span><a href="profil.html">Profil</a></li>
           </ul>
 		<form>
 			<div class="search">
@@ -90,37 +77,37 @@
 					<li><a href="#"><span class="glyphicon glyphicon-briefcase"></span>Büro</a></li>
 				  </ul>
 			</div>
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-
-        <h2 class="sub-header">Analyse</h2>
-        
-		<!-- Two columns of text below the carousel -->
-		<div class="im-centered">
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main"
+		<!-- Two columns  -->
 		<div class="row">
+			<table class="table table-responsive">
+				<thead>
+					<th></th>
+					<th>aktuell</th>
+					<th>optimal</th>
+				</thead>
+				<tr>
+					<th>Energieverbrauch</th>
+					<td style="color: #ff0000;">3256 kWh</td>
+					<td style="color: green;">2222 kWh</td>
+				</tr>
+			</table>
+			
 			<div class="col-lg-6">
-				<img class="img-circle" src="img/placeholder/kreisdiagramm.png" alt="Generic placeholder image" width="350" height="350">
-					<h2>Aktueller Stand</h2>
-				<p>Gesamt-Stromkosten: 200€ / Monat</p>
-				<p>Verbrauch: 20 kW</p>
-				<p>Größter Energieverbraucher: Fernseher / 5 kW</p>
-				<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-			</div><!-- /.col-lg-6 -->
+			<p>aktuell <br> 5200 kWh (Summe Verbrauch aktueller Geräte/Jahr)<br> Liste aktuelle Geräte - Verbrauch - Stromeinzelkosten<br> Stromkosten Gesamt</p>
+			</div><!-- /.col-lg-8 -->
 			<div class="col-lg-6">
-				<img class="img-circle" src="img/placeholder/kreisdiagramm2.png" alt="Generic placeholder image" width="350" height="350">
-					<h2>Alternativer Stand</h2>
-				<p>Gesamt-Stromkosten: 180€ / Monat</p>
-				<p>Verbrauch: 12 kW</p>
-				<p>Größter Energieverbraucher: Toaster / 3 kW</p>
-				<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-			</div><!-- /.col-lg-6 -->
+			<p>optimal <br> 3500 kWh<br> Liste optimale Geräte - Verbrauch - Stromeinzelkosten<br> Stromkosten Gesamt</p>
+			</div><!-- /.col-lg-8 -->
+			<p>Unterm Strich Ersparnis Gesamt</p>
+			<p>Anschaffungskosten?! Einzeln & Gesamt</p>
+			<p>Amortisation</p>
 		</div><!-- /.row -->
-		</div>
 		
 		</div>
 		</div>
 	</div>
 		
-
 	<footer>
 		<div class="container-fluid">
 		

@@ -1,0 +1,49 @@
+﻿<div ng-repeat="result in results" class="col-xs-12 col-sm-4 {{result.rPlace}}">
+	<h4>{{result.id}}.Platz</h4>
+		<div class="result">
+			<div class="fabricator">
+				<h5>{{ result.rDeviceName }}</h5>
+				<table class="rating table-responsive">
+					<tr>
+						<td><img src="img/geraete/{{ result.img }}" class="img-responsive" alt="" /></td>
+						<td style="text-align: right;"><img class="img-rating img-responsive" src="img/rating/{{result.imgEnergyClass}}" alt=""/></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td style="text-align: center; color: #202020; "><p name="rEnergyClass">{{result.rEnergyClass}}</p></td>
+					</tr>
+				</table>
+			</div>
+			<div class="energy">
+				<h5>Energieverbrauch</h5>
+					<table class="table table-responsive">
+						<thead>
+							<th></th>
+							<th style="text-align: right;">aktuell</th>
+							<th style="text-align: right;">neu</th>
+						</thead>
+						<tr>
+							<td style="color: #202020;">Betrieb</td>
+							<td style="text-align: right; color: #ff5252;" name="dConsumption" ng-repeat="device in devices">{{ device.dConsumption }} W</td>
+							<td style="text-align: right; color: #4CAF50;" name="rConsumption">{{ result.rConsumption }} W</td>
+						</tr>
+					</table>
+			</div>
+			<div class="price">
+					<table class="table table-responsive">
+						<tr>
+							<th>Ersparnis</th>
+							<td style="text-align: right; color: #4CAF50;" name="savings">15€ / Monat</td>
+						</tr>
+						<tr>
+							<th>Preis</th>
+							<td style="text-align: right; color: #ffea00;" name="price">{{ result.rPrice }} €</td>
+						</tr>
+						<tr>
+							<th>Rentabel nach</th>
+							<td style="text-align: right; color: #202020;" name="amortisation">ca. 3 Jahren</td>
+						</tr>
+					</table>
+			</div>
+		</div>
+</div>

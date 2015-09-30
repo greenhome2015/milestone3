@@ -1,0 +1,424 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Milestone2">
+    <meta name="author" content="Gruppe2">
+
+    <title>Green Home</title>
+	
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Google Webfont -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:100,400,700,500' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,' rel='stylesheet' type='text/css'>
+	
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid top">
+        <div class="navbar-header col-sm-3 col-md-2">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="logo">
+			<span class="glyphicon glyphicon-leaf"></span><a class="navbar-brand" href="#">Green Home</a>
+		  </div>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><span class="glyphicon glyphicon-search"></span><a href="index.html">Überblick</a></li>
+			<li class="active"><span class="glyphicon glyphicon-check"></span><a href="analyse.html">Analyse</a></li>
+          </ul>
+		<form>
+			<div class="search">
+				<input type="text" class="form-control" placeholder="Suche...">
+			</div>
+         </form>
+		<div class="profile btn-grp">
+		<button type="button" class="btn btn-primary pic dropdown-toggle" data-toggle="dropdown"><img class="profilepic" src="img/profile/spencer.jpg" /></button>
+		  <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Placeholder</a></li>
+			<li><a href="#">Placeholder</a></li>
+			<li><a href="#">Einstellungen<span class="glyphicon glyphicon-cog"></span></a></li>
+			<li><a href="#">Logout<span class="glyphicon glyphicon-off"></span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-3 col-md-2 sidebar">
+				<h2 class="sub-header">Meine Geräte</h2> 
+				  <ul class="nav nav-sidebar">
+					<li><a href="wohnzimmer.html"><span class="glyphicon glyphicon-lamp"></span>Wohnzimmer</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-apple"></span>Küche</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-cutlery"></span>Esszimmer</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-briefcase"></span>Büro</a></li>
+				  </ul>
+			</div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+		<!--Row-->
+		<div class="row">
+		<div class="consumption">
+			<div class="row">
+			<h2>Energieverbrauch</h2>
+				<div class="col-lg-6">
+				<!--Aktueller Energieverbrauch - Leiste -->
+					<div class="now">
+						<svg width="100%" height="500">
+							<rect x="50%" width="50%" height="487.64" style="fill: #ff5252;"></rect>
+						</svg>
+						<table class="table table-responsive">
+							<tr>
+								<th>Aktueller Energieverbrauch im Jahr</td>
+								<td>843,88 kWh</td>
+							</tr>
+							<tr>
+								<th>Aktuelle Energiekosten im Jahr</td>
+								<td>243,12 €</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="col-lg-6">
+				<!--Möglicher Energieverbrauch - Leiste -->
+					<div class="opt">
+						<svg width="100%" height="500">
+							<rect x="0" y="50%" width="50%" height="234.15" style="fill: #4CAF50;"></rect>
+						</svg>
+						<table class="table table-responsive">
+							<tr>
+								<td>453,70 kWh</td>
+								<th>Bestmöglicher Energieverbrauch im Jahr</th>
+							</tr>
+							<tr>
+								<td>130,71 €</td>
+								<th>Energiekosten im Jahr</th>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div> 
+			</div> <!--/.consumption-->
+		</div>
+		<!--Row-->
+		<div class="row">
+		<!--Aktuell-->
+		<div class="col-lg-6">
+		<h2>Meine Geräte</h2>
+		<div class="aktuell">
+			<!--Wohnzimmer-->
+			<table class="table table-responsive">
+				<thead>
+					<th style="color: #00bfa5;"><span class="glyphicon glyphicon-lamp"></span> Wohnzimmer</th>
+					<th>Gerät</th>
+					<th class="analyse">Nutzung/Tag</th>
+					<th class="analyse">Verbrauch</th>					
+					<th class="analyse">Kosten/Jahr</th>
+				</thead>
+				<tr>
+					<td></td>
+					<td>Fernseher</td>
+					<td class="analyse">3 h</td>
+					<td class="analyse">130 W</td>
+					<td class="analyse">41,01 €</td>
+				</tr>				
+				<tr>
+					<td></td>
+					<td>Lampe</td>
+					<td class="analyse">2 h</td>
+					<td class="analyse">20 W</td>
+					<td class="analyse">4,21 €</td>
+				</tr>
+			</table>
+			<!--Küche-->
+			<table class="table table-responsive analyse">
+				<thead>
+					<th style="color: #00bfa5;"><span class="glyphicon glyphicon-apple"></span> Küche</th>
+					<th></th>
+					<th class="analyse"></th>
+					<th class="analyse"></th>
+					<th class="analyse"></th>
+				</thead>
+				<tr>
+					<td></td>
+					<td>Kühlschrank</td>
+					<td class="analyse">24 h</td>
+					<td class="analyse">22 W</td>
+					<td class="analyse">55,52 €</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>Waschmaschine</td>
+					<td class="analyse">2 h</td>
+					<td class="analyse">23 W</td>
+					<td class="analyse">4,84 €</td>
+				</tr>				
+			</table>
+			<!--Esszimmer-->
+			<table class="table table-responsive analyse">
+				<thead>
+					<th style="color: #00bfa5;"><span class="glyphicon glyphicon-cutlery"></span> Esszimmer</th>
+					<th></th>
+					<th class="analyse"></th>
+					<th class="analyse"></th>
+					<th class="analyse"></th>
+				</thead>
+				<tr>
+					<td></td>
+					<td>Lampe</td>
+					<td class="analyse">4 h</td>
+					<td class="analyse">20 W</td>
+					<td class="analyse">8,41 €</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>Laptop</td>
+					<td class="analyse">2 h</td>
+					<td class="analyse">56 W</td>
+					<td class="analyse">11,78 €</td>
+				</tr>
+			</table>
+			<!--Büro-->
+			<table class="table table-responsive analyse">
+				<thead>
+					<th style="color: #00bfa5;"><span class="glyphicon glyphicon-briefcase"></span> Büro</th>
+					<th></th>
+					<th class="analyse"></th>
+					<th class="analyse"></th>
+					<th class="analyse"></th>
+				</thead>
+				<tr>
+					<td></td>
+					<td>PC</td>
+					<td class="analyse">2 h</td>
+					<td class="analyse">500 W</td>
+					<td class="analyse">105,16 €</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>Monitor</td>
+					<td class="analyse">2 h</td>
+					<td class="analyse">38 W</td>
+					<td class="analyse">7,99 €</td>
+				</tr>			
+				<tr>
+					<td></td>
+					<td>Lampe</td>
+					<td class="analyse">2 h</td>
+					<td class="analyse">20 W</td>
+					<td class="analyse">4,21 €</td>
+				</tr>
+			</table>
+			<!--Gesamt Meine Energiekosten/Jahr-->
+			<table class="gesamt table table-responsive">
+				<tr>
+					<th style="color:#00bfa5;"><span class="glyphicon glyphicon-piggy-bank"></span> Gesamtsumme:</th>
+					<td class="analyse" style="color: #ff5252;">257,44 €</td>
+				</tr>
+			</table>
+		</div>
+		</div>
+		
+		<!--Optimal-->
+		<div class="col-lg-4">
+		<h2>Optimale Geräte</h2>
+		<div class="optimal">
+		<!--Wohnzimmer-->
+			<table class="table table-responsive analyse">
+				<thead>
+					<th>Gerät</th>
+					<th class="analyse">Verbrauch</th>
+					<th class="analyse">Kosten/Jahr</th>
+				</thead>
+				<tr>
+					<td><a href="#" target="_blank" >Sumsang UE12345LCD</a></td>
+					<td class="analyse">47 W</td>
+					<td class="analyse">14,83 €</td>
+				</tr>				
+				<tr>
+					<td><a href="#" target="_blank" >SuperLamp LED</a></td>
+					<td class="analyse">4 W</td>
+					<td class="analyse">0,84 €</td>
+				</tr>
+			</table>
+			<!--Küche-->
+			<table class="table table-responsive">
+				<thead>
+					<th style="visibility: hidden;">A</th>
+					<th class="analyse"></th>
+					<th class="analyse"></th>
+				</thead>
+				<tr>
+					<td><a href="#" target="_blank" >Boss RTL16PW42</a></td>
+					<td class="analyse">10 W</td>
+					<td class="analyse">25,24 €</td>
+				</tr>
+				<tr>
+					<td><a href="#" target="_blank" >SchleuderMAX 6KG</a></td>
+					<td class="analyse">15 W</td>
+					<td class="analyse">3,15 €</td>
+				</tr>				
+			</table>
+			<!--Esszimmer-->
+			<table class="table table-responsive">
+				<thead>
+					<th style="visibility: hidden;">A</a></th>
+					<th class="analyse"></th>
+					<th class="analyse"></th>
+				</thead>
+				<tr>
+					<td><a href="#" target="_blank" >SuperLamp LED</a></td>
+					<td class="analyse">4 W</td>
+					<td class="analyse">1,68 €</td>
+				</tr>
+				<tr>
+					<td><a href="#" target="_blank" >Novole 15" AS</a></td>
+					<td class="analyse">32 W</td>
+					<td class="analyse">6,73 €</td>
+				</tr>
+			</table>
+			<!--Büro-->
+			<table class="table table-responsive analyse">
+				<thead>
+					<th style="visibility: hidden;">Hund</th>
+					<th class="analyse"></th>
+					<th class="analyse"></th>
+				</thead>
+				<tr>
+					<td><a href="#" target="_blank" >Prell PXS9000</a></td>
+					<td class="analyse">350 W</td>
+					<td class="analyse">73,61 €</td>
+				</tr>
+				<tr>
+					<td><a href="#" target="_blank" >Sumsang S22D300</a></td>
+					<td class="analyse">18 W</td>
+					<td class="analyse">3,79 €</td>
+				</tr>			
+				<tr>
+					<td><a href="#" target="_blank" >SuperLamp LED</a></td>
+					<td class="analyse">4 W</td>
+					<td class="analyse">0,84 €</td>
+				</tr>
+			</table>
+			<!--Gesamt Energiekosten/Jahr-->
+			<table class="gesamt table table-responsive">
+				<tr>
+					<th></th>
+					<td class="analyse" style="color: #4CAF50;">130,71 €</td>
+				</tr>
+			</table>
+		</div>
+		</div>
+		<!--Anschaffungspreis-->
+		<div class="col-lg-2">
+		<h2 style="visibility: hidden;">Price</h2>
+		<div class="preis">
+			<!--AP Wohnzimmer-->
+			<table class="table table-responsive">
+				<thead>
+					<th>Anschaffungspreis</th>
+				</thead>
+				<tr>
+					<td><a href="#" target="_blank"><span class="glyphicon glyphicon-shopping-cart"></span>499 €</a></td>
+				</tr>
+				<tr>
+					<td><a href="#" target="_blank"><span class="glyphicon glyphicon-shopping-cart"></span>20 €</a></td>
+				</tr>
+			</table>
+			<!--AP Küche-->
+			<table class="table table-responsive">
+				<thead>
+					<th style="visibility: hidden;">Anschaffungspreis</th>
+				</thead>
+				<tr>
+					<td><a href="#" target="_blank"><span class="glyphicon glyphicon-shopping-cart"></span>666 €</a></td>
+				</tr>
+				<tr>
+					<td><a href="#" target="_blank"><span class="glyphicon glyphicon-shopping-cart"></span>475 €</a></td>
+				</tr>
+			</table>
+			<!--AP Esszimmer-->
+			<table class="table table-responsive">
+				<thead>
+					<th style="visibility: hidden;">Anschaffungspreis</th>
+				</thead>
+				<tr>
+					<td><a href="#" target="_blank"><span class="glyphicon glyphicon-shopping-cart"></span>20 €</a></td>
+				</tr>
+				<tr>
+					<td><a href="#" target="_blank"><span class="glyphicon glyphicon-shopping-cart"></span>549 €</a></td>
+				</tr>
+			</table>
+			<!--AP Büro-->
+			<table class="table table-responsive">
+				<thead>
+					<th style="visibility: hidden;">im Büro?</th>
+				</thead>
+				<tr>
+					<td><a href="#" target="_blank"><span class="glyphicon glyphicon-shopping-cart"></span>999 €</a></td>
+				</tr>
+				<tr>
+					<td><a href="#" target="_blank"><span class="glyphicon glyphicon-shopping-cart"></span>120 €</a></td>
+				</tr>
+				<tr>
+					<td><a href="#" target="_blank"><span class="glyphicon glyphicon-shopping-cart"></span>20 €</a></td>
+				</tr>
+			</table>
+			<!--Gesamt AP-->
+			<table class="gesamt table table-responsive">
+				<tr>
+					<th></th>
+					<td class="analyse" style="color: #202020;">3368 €</td>
+				</tr>
+			</table>
+		</div>
+		</div>
+		</div><!-- /.row -->
+		</div><!-- /.main-->
+		</div><!-- /.row -->
+	</div>
+		
+	<footer>
+		<div class="container-fluid">
+		
+		</div>
+	</footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+	<!-- D3 -->
+	<script type="text/javascript" src="d3/d3.v3.js"></script>
+	
+	<!--D3-->
+	<script src="consumption.js"></script>
+
+	
+  </body>
+</html>
